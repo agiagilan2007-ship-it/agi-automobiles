@@ -1,33 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services - Agi Automobiles</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Agi Automobiles — Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Our Services</h1>
-    <nav>
+
+<header class="site">
+  <div class="nav-row">
+    <a class="logo" href="index.html"><span class="mark">◆</span> Agi Automobiles</a>
+    <nav class="links">
       <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
+      <a href="services.html" class="active">Services</a>
       <a href="shop.html">Shop</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
 
-  <section>
-    <ul>
-      <li>General Repairs</li>
-      <li>Fleet Maintenance</li>
-      <li>Custom Upgrades</li>
-      <li>Diagnostics & Tuning</li>
-    </ul>
+<main class="wrap">
+
+  <section class="section-tight">
+    <h1>Services</h1>
+    <p style="max-width:60ch">Everything a car needs between purchase and its next owner — diagnostics, tuning, detailing, and financing help, done by technicians who log every job.</p>
   </section>
 
-  <footer>
-    <p>© 2025 Agi Automobiles</p>
-  </footer>
+  <section class="section-tight grid grid-3">
+    <div class="card">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1.1 1.7 1.7 0 0 0-.3-1.9l-.1-.1A2 2 0 1 1 7.1 3.4l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V2a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V8a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+      <h3>Engine diagnostics</h3>
+      <p>Full OBD scan, compression test and road-test report before we touch anything.</p>
+      <span class="tag">From ₹800</span>
+    </div>
+    <div class="card">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="1.6"><path d="M13 2 3 14h7l-1 8 11-14h-7l1-6z"/></svg>
+      <h3>Performance tuning</h3>
+      <p>ECU remap and exhaust flow work for a measurable, dyno-verified power gain.</p>
+      <span class="tag">From ₹6,500</span>
+    </div>
+    <div class="card">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="1.6"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      <h3>Detailing &amp; care</h3>
+      <p>Paint correction, ceramic coating and interior deep-clean packages.</p>
+      <span class="tag">From ₹1,200</span>
+    </div>
+    <div class="card">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      <h3>Tyre &amp; brake service</h3>
+      <p>Alignment, balancing and pad replacement with a printed wear report.</p>
+      <span class="tag">From ₹500</span>
+    </div>
+    <div class="card">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg>
+      <h3>Financing assistance</h3>
+      <p>We work with three local lenders to structure a plan that fits your budget.</p>
+      <span class="tag">No fee</span>
+    </div>
+    <div class="card">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="1.6"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg>
+      <h3>Custom fabrication</h3>
+      <p>Roll cages, brackets and one-off parts machined in-house.</p>
+      <span class="tag">Quote on visit</span>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <h2>What a tuning job actually changes</h2>
+    <p style="max-width:60ch">The dial below reads real dyno numbers from a Bolt Sport before and after our standard remap — toggle it to see the difference.</p>
+    <div class="panel">
+      <div class="gauge-toggle">
+        <button class="btn btn-primary" data-state="before">Before tuning</button>
+        <button class="btn btn-ghost" data-state="after">After tuning</button>
+      </div>
+      <canvas id="gaugeCanvas" width="420" height="240"></canvas>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="panel" style="text-align:center;">
+      <h2>Not sure what your car needs?</h2>
+      <p>Bring it in for a free 15-minute inspection — no appointment required.</p>
+      <a href="contact.html" class="btn btn-primary">Talk to a technician</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="logo"><span class="mark">◆</span> Agi Automobiles</div>
+      <p style="max-width:38ch; margin-top:10px;">Independent dealership and service shop. Sales, tuning and repair under one roof.</p>
+    </div>
+    <div>
+      <h4 style="font-size:1rem;">Quick links</h4>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="shop.html">Shop</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+    <div>
+      <h4 style="font-size:1rem;">Visit</h4>
+      <p>Open Mon–Sat, 9am–7pm<br>Service bay closes 6pm</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Agi Automobiles. Student project.</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
