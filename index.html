@@ -1,35 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agi Automobiles - Home</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Agi Automobiles — Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Agi Automobiles</h1>
-    <nav>
-      <a href="index.html">Home</a>
+
+<header class="site">
+  <div class="nav-row">
+    <a class="logo" href="index.html"><span class="mark">◆</span> Agi Automobiles</a>
+    <nav class="links">
+      <a href="index.html" class="active">Home</a>
       <a href="services.html">Services</a>
       <a href="shop.html">Shop</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<main class="wrap">
 
   <section class="hero">
-    <h2>Your Vehicle. Our Passion.</h2>
-    <p>Custom solutions for small businesses and beyond.</p>
+    <div>
+      <h1>Precision runs<br>in every gear.</h1>
+      <p class="lede">Agi Automobiles sells, services and tunes vehicles for people who care how a car feels, not just how it looks. From daily hatchbacks to weekend sports cars, our technicians work on it the way they'd want theirs done.</p>
+      <div class="cta-row">
+        <a href="shop.html" class="btn btn-primary">View inventory</a>
+        <a href="services.html" class="btn btn-ghost">Book a service</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg">
+        <line class="speed-line" x1="0" y1="70" x2="180" y2="70" stroke="#2a323b" stroke-width="3"/>
+        <line class="speed-line" x1="0" y1="100" x2="140" y2="100" stroke="#2a323b" stroke-width="3"/>
+        <line class="speed-line" x1="0" y1="130" x2="200" y2="130" stroke="#2a323b" stroke-width="3"/>
+        <g>
+          <path d="M60 190 Q60 150 110 145 L180 100 Q210 85 250 90 L340 105 Q400 112 420 150 L430 190 Z"
+                fill="#1a2027" stroke="#e63946" stroke-width="3"/>
+          <rect x="185" y="108" width="140" height="42" rx="6" fill="#12161b" stroke="#c9ced3" stroke-width="1.5"/>
+          <circle cx="130" cy="192" r="26" fill="#0b0d10" stroke="#c9ced3" stroke-width="4"/>
+          <circle cx="130" cy="192" r="8" fill="#8b96a1"/>
+          <circle cx="360" cy="192" r="26" fill="#0b0d10" stroke="#c9ced3" stroke-width="4"/>
+          <circle cx="360" cy="192" r="8" fill="#8b96a1"/>
+        </g>
+      </svg>
+    </div>
   </section>
 
-  <section class="gallery">
-    <h3>Gallery</h3>
-    <img src="images/car1.jpg" alt="Car 1" />
-    <img src="images/car2.jpg" alt="Car 2" />
+  <section class="stats">
+    <div class="stat"><div class="num" data-target="12" data-suffix="+">0</div><div class="label">Years in business</div></div>
+    <div class="stat"><div class="num" data-target="3400" data-suffix="+">0</div><div class="label">Cars sold</div></div>
+    <div class="stat"><div class="num" data-target="18">0</div><div class="label">Certified technicians</div></div>
+    <div class="stat"><div class="num" data-target="4.8" data-suffix="/5">0</div><div class="label">Customer rating</div></div>
   </section>
 
-  <footer>
-    <p>© 2025 Agi Automobiles</p>
-  </footer>
+  <section class="section">
+    <h2>Featured models</h2>
+    <p style="max-width:60ch">A quick look at what's moving fastest off the lot this month — full specs and pricing are on the shop page.</p>
+    <div class="grid grid-3">
+      <div class="card">
+        <span class="tag">Hatchback</span>
+        <h3>Vega Hatchback</h3>
+        <p>Light, efficient, built for the daily commute. 21 km/l city mileage.</p>
+      </div>
+      <div class="card">
+        <span class="tag">SUV</span>
+        <h3>Raptor SUV</h3>
+        <p>All-weather grip and cabin space for the family that goes off-schedule.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Sport</span>
+        <h3>Bolt Sport</h3>
+        <p>210 hp, rear-biased handling. The one people come in just to test-drive.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="panel" style="text-align:center; background:linear-gradient(135deg,#1a2027,#12161b);">
+      <h2>Ready to find your next ride?</h2>
+      <p>Browse the full inventory with live specs, or talk to a technician about a service plan.</p>
+      <a href="shop.html" class="btn btn-primary">Browse inventory</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="logo"><span class="mark">◆</span> Agi Automobiles</div>
+      <p style="max-width:38ch; margin-top:10px;">Independent dealership and service shop. Sales, tuning and repair under one roof.</p>
+    </div>
+    <div>
+      <h4 style="font-size:1rem;">Quick links</h4>
+      <p><a href="services.html">Services</a></p>
+      <p><a href="shop.html">Shop</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+    <div>
+      <h4 style="font-size:1rem;">Visit</h4>
+      <p>Open Mon–Sat, 9am–7pm<br>Service bay closes 6pm</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Agi Automobiles. Student project.</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
