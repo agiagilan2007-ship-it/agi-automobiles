@@ -1,40 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - Agi Automobiles</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Agi Automobiles — Contact</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Contact Us</h1>
-    <nav>
+
+<header class="site">
+  <div class="nav-row">
+    <a class="logo" href="index.html"><span class="mark">◆</span> Agi Automobiles</a>
+    <nav class="links">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="shop.html">Shop</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
-  </header>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
 
-  <section class="contact-form">
-    <form action="#" method="post">
-      <label for="name">Name:</label><input type="text" id="name" name="name" required />
-      <label for="email">Email:</label><input type="email" id="email" name="email" required />
-      <label for="message">Message:</label><textarea id="message" name="message"></textarea>
-      <button type="submit">Send</button>
-    </form>
+<main class="wrap">
 
-    <h3>Book a Service</h3>
-    <form action="#" method="post">
-      <label for="date">Preferred Date:</label><input type="date" id="date" name="date" required />
-      <label for="vehicle">Vehicle Model:</label><input type="text" id="vehicle" name="vehicle" required />
-      <button type="submit">Book Now</button>
-    </form>
+  <section class="section-tight">
+    <h1>Get in touch</h1>
+    <p style="max-width:60ch">Enquire about a car, book a service slot, or ask a technician a question before you drive in.</p>
   </section>
 
-  <footer>
-    <p>© 2025 Agi Automobiles</p>
-  </footer>
+  <section class="section-tight contact-grid">
+    <form id="contactForm" class="panel" novalidate>
+      <div class="field">
+        <label for="name">Full name</label>
+        <input type="text" id="name" data-required required>
+        <div class="error-msg">Enter your name.</div>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" data-required required>
+        <div class="error-msg">Enter a valid email address.</div>
+      </div>
+      <div class="field">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" data-required required>
+        <div class="error-msg">Enter a phone number.</div>
+      </div>
+      <div class="field">
+        <label for="interest">Interested in</label>
+        <select id="interest">
+          <option>Buying a car</option>
+          <option>Servicing / repair</option>
+          <option>Performance tuning</option>
+          <option>Financing</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" data-required required></textarea>
+        <div class="error-msg">Tell us a little about what you need.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Send enquiry</button>
+      <div class="form-status" id="formStatus"></div>
+    </form>
+
+    <div>
+      <div class="panel" style="margin-bottom:20px;">
+        <h3>Visit the shop</h3>
+        <ul class="info-list">
+          <li><span>📍</span><span><strong>Address</strong>14 Anna Salai Cross Street, Chennai, Tamil Nadu</span></li>
+          <li><span>🕘</span><span><strong>Hours</strong>Mon–Sat, 9am–7pm</span></li>
+          <li><span>📞</span><span><strong>Phone</strong>+91 98765 43210</span></li>
+          <li><span>✉️</span><span><strong>Email</strong>hello@agiautomobiles.example</span></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="140" fill="#12161b" rx="8"/>
+          <path d="M40 110 L40 60 L100 20 L160 60 L160 110 Z" fill="none" stroke="#2a323b" stroke-width="2"/>
+          <path d="M100 30 C120 30 130 45 130 60 C130 80 100 105 100 105 C100 105 70 80 70 60 C70 45 80 30 100 30 Z" fill="#e63946"/>
+          <circle cx="100" cy="58" r="10" fill="#12161b"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="logo"><span class="mark">◆</span> Agi Automobiles</div>
+      <p style="max-width:38ch; margin-top:10px;">Independent dealership and service shop. Sales, tuning and repair under one roof.</p>
+    </div>
+    <div>
+      <h4 style="font-size:1rem;">Quick links</h4>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="services.html">Services</a></p>
+      <p><a href="shop.html">Shop</a></p>
+    </div>
+    <div>
+      <h4 style="font-size:1rem;">Visit</h4>
+      <p>Open Mon–Sat, 9am–7pm<br>Service bay closes 6pm</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Agi Automobiles. Student project.</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
